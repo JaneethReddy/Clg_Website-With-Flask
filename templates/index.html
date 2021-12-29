@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>REVA UNIVERSITY</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/main.css') }}">
+</head>
+<body>
+	<header>
+		<a href="#" id="logo" onmouseover="mouseOver()" onmouseout="mouseOut()">REVA UNIVERSITY</a>
+		<ul class="navigation">
+			<li><a href="#about" class="about">About</a></li>
+			<li><a href="#contact" class="contact">Contact</a></li>
+			<li><a href="course" class="others">Courses</a></li>
+		</ul>
+	</header>
+
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2>REVA UNIVERSITY</h2>
+			<p style="text-align: right; background-color: rgba(256,256,256,90%);">BRIDGE to EDUCATION  </p>
+		</div>
+	</section>
+<br><br><br><br>
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col50">
+				<h2 class="titleText"><span>A</span>bout Us</h2>
+				<p>We are one of the leading EDUcational institution in the city with an aim to be a bridge between students and knowledge<br><br> We provide International standard of teaching while also finding and improving students unique skills</p>
+			</div>
+			<div class="col50">
+				<div class="imgBx">
+					<img src="https://www.iesonline.co.in/colleges-image/reva-university.jpg" alt="image">
+				</div>
+			</div>
+		</div>
+		
+	</section>
+<br><br><br><br>
+	<section class="contact" id="contact">
+		<div class="title">
+			<h2 class="titleText"><span>C</span>ontact <span>D</span>etails</h2>
+			<h3>Phone No:</h3> <br> <h4>		8309784281,	<br>		9573642089</h4><br>
+			<h3>Address:</h3><br> <h4>Yelahanka,Bengaluru</h4>
+		</div>
+	</section>
+
+<br><br>
+
+<section class="others" id="others">
+	<div class="title ">
+		<h2 class="titleText"><span>C</span>ourses <span>O</span>ffered <h2>
+		<br> <h3>Clarify your Doubts:</h3>
+	</div>
+	<div class="form">
+		<h3>Send Message</h3>
+		<div class="inputBox">
+			<input type="text" placeholder="Name">
+		</div>
+		<div class="inputBox">
+			<input type="text" placeholder="Email">
+		</div>
+		<div class="inputBox">
+			<textarea placeholder="Message"></textarea>
+		</div>
+		<div class="inputBox">
+			<!-- <input type="submit" style="background:rgb(25,150,150) " value="Send"> -->
+			<button onclick="submit()" style="background:#fdad5c; ">Send</button>
+		</div>
+	</div>
+</section>
+
+	<script type="text/javascript">
+	function mouseOver(){
+		document.getElementById('logo').style.color="red";
+	}
+	function mouseOut(){
+		document.getElementById("logo").style.color= "#fdad5c"
+	}
+	function submit(){
+		alert("Message succefully sent!");
+	}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+    <div class="register">
+    <h1>Register for a course:</h1>
+    <form action="/registered" method="post">
+    <input size="40px" style="height:30px" type="text" name ="name" placeholder="Name">
+    <input size="40px" style="height:30px" type="text"  name ="email" placeholder="Email">
+    <select name="course" value="course" style="height:30px">
+        <option disabled selected value="Course">Course</option>
+        <option value="Btech-CSE">Btech-CSE</option>
+        <option value="Btech-ECE">Btech-ECE</option>
+        <option value="Btech-EEE">Btech-EEE</option>
+        <option value="BSc-CS">Btech-Computer Science</option>
+        <option value="BBA-LLB">BBA-LLB</option>
+    </select>
+    <input type="submit" style="height:30px" value="Register">
+    </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reva University</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/main.css') }}">
+</head>
+<body>
+    <header>
+		<a href="#" id="logo" >REVA UNIVERSITY</a>
+        <img style="position: absolute; height:70px; width:90px; left:10px "src = "{{ url_for('static', filename = 'screen-0.jpg') }}" >
+	</header>
+    {% block body %}{% endblock %}
+
+</body>
+
+
+</html>

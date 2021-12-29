@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block body %}
+    <div class="register">
+        <h1>You are Successfully Registered</h1>
+        <h4><a href="/" class="others">Click here to go back to home page</a></h4>
+    </div>
+   <div class="registered_stu">
+    <h1>Already Registered Students:</h1> 
+    <ul>
+        {% for s in students %}
+        <li> {{s}}</li>
+        {% endfor %}
+    </ul>
+    </div>
+{% endblock %}
